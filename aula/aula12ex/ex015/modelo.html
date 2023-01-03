@@ -7,15 +7,29 @@
     <title>Verificador de idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="verificar()">
     <header>
         <h1>Verificador de Idade</h1>
     </header>
     <section>
         <div>
-            testando...
+            <p>Ano de Nascimento :
+                <input type="number" name="txtano" id="txtano">
+
+            </p>
+            <p>Sexo :
+                <input type="radio" name ="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name ="radsex" id="fem" checked>
+                <label for="fem">Feminino</label>
+                
+            </p> 
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>   
         </div>
         <div id="res">
+            <p>Preencha os dados para ver o resultado!</p>
 
         </div>
 
