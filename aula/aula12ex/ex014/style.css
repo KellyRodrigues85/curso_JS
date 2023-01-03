@@ -20,6 +20,12 @@ section{
 
 }
 
+img{
+    width: 250px;
+    border-radius: 50%;
+
+}
+
 footer{
     color: white;
     text-align: center;
