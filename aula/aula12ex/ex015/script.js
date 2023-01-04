@@ -4,7 +4,13 @@ function verificar() {
    var fano = document.getElementById('txtano')
    var res = document.getElementById('res')
 
-   if(fano.value.length == 0 || fano.value > ano )
-        window.alert('erro')
+   if(fano.value.length == 0 || Number(fano.value) > ano ){
+         window.alert('verifique os dados e tente novamente')
+   } else {
+        var fsex = document.getElementsByName ('radsex')
+        var idade = ano - Number(fano.value)
+        res.innerHTML= `Idade caulculada: ${idade}`
+   }
+       
 
 }
