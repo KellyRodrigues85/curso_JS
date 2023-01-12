@@ -12,7 +12,11 @@ function contar () {
         var f = Number(fim.value)
         var p = Number(passo.value)
 
-        for( var c = i; c <= f; c += p)
+        for(var c = i; c <= f; c += p) {
+            res.innerHTML += `${c}`
+        }
+                	
+        
     }
 
 }
