@@ -11,6 +11,7 @@ function contar () {
         var i = Number(ini.value)
         var f = Number(fim.value)
         var p = Number(passo.value)
+        var pe = Number
 
         for(var c = i; c <= f; c += p) {
             res.innerHTML += `${c}`
