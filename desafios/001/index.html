@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a button </button></title>
+    <style>
+        body{
+            background: rgba(109, 109, 226, 0.411);
+        }
+        div#container{
+            background: gray;
+            width: auto;
+            height: 150px;
+            border-radius: 12px;
+            top : 12px;
+            left: auto;
+          
+        }
+        h1{
+            background-color: aqua;
+            text-align: center;
+        
+        }
+        
+        button{
+            height: 50px;
+            width: 100px;
+            border-radius: 8px;
+            font-size: 16px;
+            display: inline-block;
+            margin-right: 20px;
+            margin-left: 20px;
+           
+        
+        }
+    
+        
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1> Messaging Challenge</h1>
+        <div id="btn">
+            <button id="btn1">Botton 1</button>
+            <button id="btn2" >Botton 2</button>
+            <button id="btn3">Botton 3</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('btn1').addEventListener('click', function(){
+            alert('You clicked on the first botton')
+        })
+
+        document.getElementById('btn2').addEventListener('click', function(){
+            alert('You clicked on the second botton')
+        })
+
+        document.getElementById('btn3').addEventListener('click', function(){
+            alert('You clicked on the third botton')
+        })
+    </script>
+</body>
+</html>
